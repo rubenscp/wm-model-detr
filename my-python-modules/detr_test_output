@@ -1,0 +1,75 @@
+loading annotations into memory...
+Done (t=0.05s)
+creating index...
+index created!
+column_names: ['' '__background__' 'Apothecium' 'Imature Sclerotium' 'Mature Sclerotium'
+ 'White Mold' 'Imature Sclerotium and White Mold' 'Incorrect predictions']
+confusion_matrix: [[  0.   0.   0.   0.   0.   0.   0.]
+ [  0.  81.   0.   1.   0.   0.   4.]
+ [  0.   0.   0.   0.   0.   0.   0.]
+ [  0.   1.   0. 101.   0.  15.  19.]
+ [  0.   0.   0.   0.   0.   0.   0.]
+ [  0.   0.   0.   4.   0. 152.  17.]
+ [  0.   0.   0.   1.   0.   1.   0.]]
+ tp_per_classes: [ 81.   0. 101.   0. 152.]
+item: [0. 0. 0. 0. 0. 0. 0.]
+item: [ 0. 81.  0.  1.  0.  0.  4.]
+item: [0. 0. 0. 0. 0. 0. 0.]
+item: [  0.   1.   0. 101.   0.  15.  19.]
+item: [0. 0. 0. 0. 0. 0. 0.]
+item: [  0.   0.   0.   4.   0. 152.  17.]
+item: [0. 0. 0. 1. 0. 1. 0.]
+rubens
+len(tp_per_classes): 5
+fp_per_classes: [ 5.  0. 35.  0. 21.]
+fn_per_classes: [0. 0. 1. 0. 1.]
+tp_per_classes: [ 81.   0. 101.   0. 152.]
+x_labels_names: ['__background__', 'Apothecium', 'Imature Sclerotium', 'Mature Sclerotium', 'White Mold', 'Imature Sclerotium and White Mold', 'Incorrect predictions']
+classes: ['Apothecium', 'Imature Sclerotium', 'Mature Sclerotium', 'White Mold', 'Imature Sclerotium and White Mold', 'Incorrect predictions']
+i: 0
+i: 1
+i: 2
+i: 3
+i: 4
+list: [['__background__', '0.0', '0.0', '0.0', '0.0', '0.0', '0.0', '0.0'], ['Apothecium', '0.0', '81.0', '0.0', '1.0', '0.0', '0.0', '4.0'], ['Imature Sclerotium', '0.0', '0.0', '0.0', '0.0', '0.0', '0.0', '0.0'], ['Mature Sclerotium', '0.0', '1.0', '0.0', '101.0', '0.0', '15.0', '19.0'], ['White Mold', '0.0', '0.0', '0.0', '0.0', '0.0', '0.0', '0.0'], ['Imature Sclerotium and White Mold', '0.0', '0.0', '0.0', '4.0', '0.0', '152.0', '17.0'], ['Undetected objects', '0.0', '0.0', '0.0', '1.0', '0.0', '1.0', '0.0'], '', ['', 'TP', 'FP', 'FN', 'TN'], ['Apothecium', 81.0, 5.0, 0.0, 308.0], ['Imature Sclerotium', 0.0, 0.0, 0.0, 395.0], ['Mature Sclerotium', 101.0, 35.0, 1.0, 254.0], ['White Mold', 0.0, 0.0, 0.0, 395.0], ['Imature Sclerotium and White Mold', 152.0, 21.0, 1.0, 207.0]]
+column_names: ['' '__background__' 'Apothecium' 'Imature Sclerotium' 'Mature Sclerotium'
+ 'White Mold' 'Imature Sclerotium and White Mold' 'Incorrect predictions']
+confusion_matrix: [[0.         0.         0.         0.         0.         0.
+  0.        ]
+ [0.         0.98780488 0.         0.00934579 0.         0.
+  0.1       ]
+ [0.         0.         0.         0.         0.         0.
+  0.        ]
+ [0.         0.01219512 0.         0.94392523 0.         0.08928571
+  0.475     ]
+ [0.         0.         0.         0.         0.         0.
+  0.        ]
+ [0.         0.         0.         0.03738318 0.         0.9047619
+  0.425     ]
+ [0.         0.         0.         0.00934579 0.         0.00595238
+  0.        ]]
+ tp_per_classes: [ 81.   0. 101.   0. 152.]
+item: [0. 0. 0. 0. 0. 0. 0.]
+item: [0.         0.98780488 0.         0.00934579 0.         0.
+ 0.1       ]
+item: [0. 0. 0. 0. 0. 0. 0.]
+item: [0.         0.01219512 0.         0.94392523 0.         0.08928571
+ 0.475     ]
+item: [0. 0. 0. 0. 0. 0. 0.]
+item: [0.         0.         0.         0.03738318 0.         0.9047619
+ 0.425     ]
+item: [0.         0.         0.         0.00934579 0.         0.00595238
+ 0.        ]
+rubens
+len(tp_per_classes): 5
+fp_per_classes: [ 5.  0. 35.  0. 21.]
+fn_per_classes: [0. 0. 1. 0. 1.]
+tp_per_classes: [ 81.   0. 101.   0. 152.]
+x_labels_names: ['__background__', 'Apothecium', 'Imature Sclerotium', 'Mature Sclerotium', 'White Mold', 'Imature Sclerotium and White Mold', 'Incorrect predictions']
+classes: ['Apothecium', 'Imature Sclerotium', 'Mature Sclerotium', 'White Mold', 'Imature Sclerotium and White Mold', 'Incorrect predictions']
+i: 0
+i: 1
+i: 2
+i: 3
+i: 4
+list: [['__background__', '0.0', '0.0', '0.0', '0.0', '0.0', '0.0', '0.0'], ['Apothecium', '0.0', '0.9878048780487805', '0.0', '0.009345794392523364', '0.0', '0.0', '0.1'], ['Imature Sclerotium', '0.0', '0.0', '0.0', '0.0', '0.0', '0.0', '0.0'], ['Mature Sclerotium', '0.0', '0.012195121951219513', '0.0', '0.9439252336448598', '0.0', '0.08928571428571429', '0.475'], ['White Mold', '0.0', '0.0', '0.0', '0.0', '0.0', '0.0', '0.0'], ['Imature Sclerotium and White Mold', '0.0', '0.0', '0.0', '0.037383177570093455', '0.0', '0.9047619047619048', '0.425'], ['Undetected objects', '0.0', '0.0', '0.0', '0.009345794392523364', '0.0', '0.005952380952380952', '0.0'], '', ['', 'TP', 'FP', 'FN', 'TN'], ['Apothecium', 81.0, 5.0, 0.0, 308.0], ['Imature Sclerotium', 0.0, 0.0, 0.0, 395.0], ['Mature Sclerotium', 101.0, 35.0, 1.0, 254.0], ['White Mold', 0.0, 0.0, 0.0, 395.0], ['Imature Sclerotium and White Mold', 152.0, 21.0, 1.0, 207.0]]

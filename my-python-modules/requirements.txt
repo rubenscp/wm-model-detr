@@ -1,0 +1,14 @@
+numpy
+matplotlib
+pandas
+scikit-learn
+opencv-python
+scipy
+lxml
+dict2xml
+seaborn
+openpyxl
+pytorch-lightning
+transformers
+timm
+pycocotools

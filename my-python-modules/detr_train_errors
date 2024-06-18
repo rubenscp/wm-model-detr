@@ -1,0 +1,60 @@
+The `max_size` parameter is deprecated and will be removed in v4.26. Please specify in `size['longest_edge'] instead`.
+The `max_size` parameter is deprecated and will be removed in v4.26. Please specify in `size['longest_edge'] instead`.
+The `max_size` parameter is deprecated and will be removed in v4.26. Please specify in `size['longest_edge'] instead`.
+The `max_size` parameter is deprecated and will be removed in v4.26. Please specify in `size['longest_edge'] instead`.
+The `max_size` parameter is deprecated and will be removed in v4.26. Please specify in `size['longest_edge'] instead`.
+The `max_size` parameter is deprecated and will be removed in v4.26. Please specify in `size['longest_edge'] instead`.
+The `max_size` parameter is deprecated and will be removed in v4.26. Please specify in `size['longest_edge'] instead`.
+The `max_size` parameter is deprecated and will be removed in v4.26. Please specify in `size['longest_edge'] instead`.
+The `max_size` parameter is deprecated and will be removed in v4.26. Please specify in `size['longest_edge'] instead`.
+The `max_size` parameter is deprecated and will be removed in v4.26. Please specify in `size['longest_edge'] instead`.
+The `max_size` parameter is deprecated and will be removed in v4.26. Please specify in `size['longest_edge'] instead`.
+The `max_size` parameter is deprecated and will be removed in v4.26. Please specify in `size['longest_edge'] instead`.
+The `max_size` parameter is deprecated and will be removed in v4.26. Please specify in `size['longest_edge'] instead`.
+The `max_size` parameter is deprecated and will be removed in v4.26. Please specify in `size['longest_edge'] instead`.
+The `max_size` parameter is deprecated and will be removed in v4.26. Please specify in `size['longest_edge'] instead`.
+Some weights of the model checkpoint at /home/lovelace/proj/proj939/rubenscp/research/white-mold-applications/wm-pretrained-model/detr-resnet-50 were not used when initializing DetrForObjectDetection: ['model.backbone.conv_encoder.model.layer1.0.downsample.1.num_batches_tracked', 'model.backbone.conv_encoder.model.layer2.0.downsample.1.num_batches_tracked', 'model.backbone.conv_encoder.model.layer3.0.downsample.1.num_batches_tracked', 'model.backbone.conv_encoder.model.layer4.0.downsample.1.num_batches_tracked']
+- This IS expected if you are initializing DetrForObjectDetection from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing DetrForObjectDetection from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of DetrForObjectDetection were not initialized from the model checkpoint at /home/lovelace/proj/proj939/rubenscp/research/white-mold-applications/wm-pretrained-model/detr-resnet-50 and are newly initialized because the shapes did not match:
+- class_labels_classifier.bias: found shape torch.Size([92]) in the checkpoint and torch.Size([7]) in the model instantiated
+- class_labels_classifier.weight: found shape torch.Size([92, 256]) in the checkpoint and torch.Size([7, 256]) in the model instantiated
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+/home/lovelace/proj/proj939/rubenscp/CENAPAD/miniconda3/lib/python3.12/site-packages/pytorch_lightning/trainer/connectors/logger_connector/logger_connector.py:75: Starting from v1.9.0, `tensorboardX` has been removed as a dependency of the `pytorch_lightning` package, due to potential conflicts with other packages in the ML ecosystem. For this reason, `logger=True` will use `CSVLogger` as the default logger, unless the `tensorboard` or `tensorboardX` packages are found. Please `pip install lightning[extra]` or one of them to enable TensorBoard support by default
+You are using a CUDA device ('NVIDIA A100-PCIE-40GB MIG 3g.20gb') that has Tensor Cores. To properly utilize them, you should set `torch.set_float32_matmul_precision('medium' | 'high')` which will trade-off precision for performance. For more details, read https://pytorch.org/docs/stable/generated/torch.set_float32_matmul_precision.html#torch.set_float32_matmul_precision
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+
+  | Name  | Type                   | Params
+-------------------------------------------------
+0 | model | DetrForObjectDetection | 41.5 M
+-------------------------------------------------
+41.3 M    Trainable params
+222 K     Non-trainable params
+41.5 M    Total params
+166.012   Total estimated model params size (MB)
+/home/lovelace/proj/proj939/rubenscp/CENAPAD/miniconda3/lib/python3.12/site-packages/pytorch_lightning/utilities/data.py:77: Trying to infer the `batch_size` from an ambiguous collection. The batch size we found is 32. To avoid any miscalculations, use `self.log(..., batch_size=batch_size)`.
+/home/lovelace/proj/proj939/rubenscp/CENAPAD/miniconda3/lib/python3.12/site-packages/pytorch_lightning/utilities/data.py:77: Trying to infer the `batch_size` from an ambiguous collection. The batch size we found is 1. To avoid any miscalculations, use `self.log(..., batch_size=batch_size)`.
+Metric validation_loss improved. New best score: 1.099
+Metric validation_loss improved by 0.033 >= min_delta = 0.001. New best score: 1.066
+Metric validation_loss improved by 0.104 >= min_delta = 0.001. New best score: 0.962
+Metric validation_loss improved by 0.094 >= min_delta = 0.001. New best score: 0.868
+Metric validation_loss improved by 0.013 >= min_delta = 0.001. New best score: 0.855
+Metric validation_loss improved by 0.034 >= min_delta = 0.001. New best score: 0.822
+Metric validation_loss improved by 0.039 >= min_delta = 0.001. New best score: 0.782
+Metric validation_loss improved by 0.018 >= min_delta = 0.001. New best score: 0.765
+Metric validation_loss improved by 0.032 >= min_delta = 0.001. New best score: 0.733
+Metric validation_loss improved by 0.002 >= min_delta = 0.001. New best score: 0.731
+Metric validation_loss improved by 0.018 >= min_delta = 0.001. New best score: 0.713
+Metric validation_loss improved by 0.029 >= min_delta = 0.001. New best score: 0.684
+Metric validation_loss improved by 0.013 >= min_delta = 0.001. New best score: 0.671
+Metric validation_loss improved by 0.027 >= min_delta = 0.001. New best score: 0.645
+Metric validation_loss improved by 0.006 >= min_delta = 0.001. New best score: 0.639
+Metric validation_loss improved by 0.019 >= min_delta = 0.001. New best score: 0.620
+Metric validation_loss improved by 0.004 >= min_delta = 0.001. New best score: 0.616
+Metric validation_loss improved by 0.004 >= min_delta = 0.001. New best score: 0.612
+Metric validation_loss improved by 0.011 >= min_delta = 0.001. New best score: 0.601
+Monitored metric validation_loss did not improve in the last 50 records. Best score: 0.601. Signaling Trainer to stop.

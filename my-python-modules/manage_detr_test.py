@@ -518,6 +518,13 @@ def get_neural_network_model(parameters, device):
 
     # moving model into GPU 
     model = model.to(device)
+
+    number_of_parameters = count_parameters(model)
+    logging.info(f'Number of model parameters: {number_of_parameters}')    
+
+    num_layers = compute_num_layers(model)
+    logging_info(f'Number of layers: {num_layers}')
+
     logging.info(f'{model}')
 
     # returning neural network model

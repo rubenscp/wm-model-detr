@@ -85,3 +85,19 @@ class Detr(pl.LightningModule):
 
     def val_dataloader(self):
         return self.val_dataloader
+
+
+
+def count_parameters(model):
+    number_of_parameters = sum(p.numel() for p in model.parameters() if p.requires_grad)    
+    return number_of_parameters
+
+def count_layers(module):
+    if isinstance(module, (torch.nn.Conv2d, torch.nn.Linear)):
+        return 1
+    return 0
+
+def compute_num_layers(model):
+    num_layers = sum(count_layers(layer) for layer in model.modules())
+    return num_layers
+      

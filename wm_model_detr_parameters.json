@@ -7,8 +7,8 @@
             "input_dataset_path": "white-mold-dataset/results-pre-processed-images/running-0021-15ds-300x300-merged-classes/splitting_by_images/4-balanced-output-dataset"
         },
         "experiment": {
-            "id": "exp-007",
-            "description": "007 - Implementing DETR model using the dataset with just three classes: apothecium, mature scledotium and the merged class."
+            "id": "exp-fabio",
+            "description": "999 - Tests."
         },
         "inference": {
             "weights_folder": "/home/lovelace/proj/proj939/rubenscp/research/white-mold-inference-weights/exp-007-training-300x300-merging-classes-balanced-image-all-classes",
@@ -46,7 +46,7 @@
             "Imat Scler", 
             "Mat Scler", 
             "White Mold", 
-            "Im Scl and WM"
+            "White Mold"
         ],
         "is_pre_trained_weights": true,
         "learning_rate_initial": 0.0001,

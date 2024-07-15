@@ -1,5 +1,5 @@
 #PBS -N detr_test
-#PBS -q testegpu
+#PBS -q miggpu24h
 #PBS -m abe
 #PBS -e detr_test_errors 
 #PBS -o detr_test_output

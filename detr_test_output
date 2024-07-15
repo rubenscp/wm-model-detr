@@ -1,5 +1,5 @@
 loading annotations into memory...
-Done (t=0.00s)
+Done (t=0.05s)
 creating index...
 index created!
 column_names: ['' '__background__' 'Apothecium' 'Imature Sclerotium' 'Mature Sclerotium'

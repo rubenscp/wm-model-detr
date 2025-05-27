@@ -4,11 +4,12 @@
             "input_image_size": 300,
             "annotation_format": "coco_detection_json",
             "convert_pascal_voc_to_coco_format": false,
-            "input_dataset_path": "white-mold-dataset/results-pre-processed-images/running-0021-15ds-300x300-merged-classes/splitting_by_images/4-balanced-output-dataset"
+            "input_dataset_path": "white-mold-dataset/results-pre-processed-images/running-0021-15ds-300x300-merged-classes/splitting_by_images/4-balanced-output-dataset",
+            "input_dataset_type" : "valid"
         },
         "experiment": {
-            "id": "exp-fabio",
-            "description": "999 - Tests."
+            "id": "exp-011",
+            "description": "011 - Getting optimal hyperparameters of the SSD, Faster RCNN, YOLOv8, YOLOv9, YOLOv10, DETR and TransUNet models from validation input dataset."
         },
         "inference": {
             "weights_folder": "/home/lovelace/proj/proj939/rubenscp/research/white-mold-inference-weights/exp-007-training-300x300-merging-classes-balanced-image-all-classes",
@@ -26,9 +27,9 @@
         "patience": 50,
         "min_delta": 0.001,
         "resize_of_input_image": 300,
-        "threshold": 0.4,
-        "iou_threshold": 0.3,
-        "non_maximum_suppression": 0.7,
+        "threshold": 0.7,
+        "iou_threshold": 0.7,
+        "non_maximum_suppression": 0.9,
         "number_workers": 7,
         "comment_number_of_classes": "consider number of classes plus the background class",
         "number_of_classes": 6,       

@@ -17,6 +17,9 @@ class Detr(pl.LightningModule):
         #                                                      num_labels=len(id2label),
         #                                                      ignore_mismatched_sizes=True)
         # pretrained_model_name_or_path = '/home/lovelace/proj/proj939/rubenscp/research/white-mold-applications/wm-pretrained-model/detr-resnet-50'
+        print(f'detr - model.py - pretrained_model_name_or_path: {pretrained_model_name_or_path}')
+        print(f'detr - model.py - cache_dir: {cache_dir}')
+
         self.model = DetrForObjectDetection.from_pretrained(
             pretrained_model_name_or_path=pretrained_model_name_or_path,
             cache_dir=cache_dir,

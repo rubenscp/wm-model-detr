@@ -10,6 +10,10 @@ Advisors:
 Date: 14/05/2024
 Version: 1.0
 This implementation is based on this notebook: https://github.com/NielsRogge/Transformers-Tutorials/blob/master/DETR/Fine_tuning_DetrForObjectDetection_on_custom_dataset_(balloon).ipynb 
+
+Attention - Install the following versions:
+    timm 1.0.11 via pip install timm 
+    transformer 4.38.2 via conda install conda-forge:transformer 
 """
 
 # Basic python and ML Libraries
@@ -131,7 +135,8 @@ def main():
 
     # loading datasets and dataloaders of image dataset for processing
     processing_tasks.start_task('Loading test dataset of image dataset')
-    dataset_type = 'test'
+    # dataset_type = 'test'
+    dataset_type = parameters['input']['input_dataset']['input_dataset_type']
     dataset_test, dataset_test_original_boxes, processor = get_dataset(parameters, device, dataset_type)
     processing_tasks.finish_task('Loading test dataset of image dataset')
 
@@ -535,7 +540,9 @@ def get_input_dataset_statistics(parameters):
     
     annotation_statistics = AnnotationsStatistic()
     # steps = ['train', 'valid', 'test'] 
-    steps = ['test'] 
+    # steps = ['test']
+    steps = parameters['input']['input_dataset']['input_dataset_type']
+    print(f'Rubens steps:{steps}')
     annotation_statistics.processing_statistics(parameters, steps)
     return annotation_statistics
 

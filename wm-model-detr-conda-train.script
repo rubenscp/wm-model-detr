@@ -1,5 +1,5 @@
 #PBS -N detr_train
-#PBS -q miggpu24h
+#PBS -q testegpu
 #PBS -m abe
 #PBS -e detr_train_errors 
 #PBS -o detr_train_output

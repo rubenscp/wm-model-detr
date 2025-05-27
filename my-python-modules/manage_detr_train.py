@@ -10,6 +10,10 @@ Advisors:
 Date: 14/05/2024
 Version: 1.0
 This implementation is based on this notebook: https://github.com/NielsRogge/Transformers-Tutorials/blob/master/DETR/Fine_tuning_DetrForObjectDetection_on_custom_dataset_(balloon).ipynb 
+
+Attention - Install the following versions:
+    timm 1.0.11 via pip install timm 
+    transformer 4.38.2 via conda install conda-forge:transformer 
 """
 
 # Setting folder of common libraries of White Mold Project
